@@ -16,11 +16,16 @@ public:
 	void introduce() {
 		cout << "Hi , my name is: " << name << ", I am " << age << " years old, and my  is " << height << " cm." << endl;
 	}
+	void birthday() {
+		age++;
+	}
 
 };
 
 int main()
 {
 	Men student("hanan", 21, 180);
+	student.introduce();
+	student.birthday();
 	student.introduce();
 }
