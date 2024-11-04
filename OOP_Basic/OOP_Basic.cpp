@@ -22,6 +22,9 @@ public:
 	string getName() {
 		return name;
 	}
+	void setName(string newName) {
+		name = newName;
+	}
 	
 };
 
@@ -31,8 +34,12 @@ int main()
 	student.introduce();
 	student.birthday();
 	student.introduce();
-	cout << student.getName();
-	
+	cout << student.getName() << endl;
+	string newName;
+	cout << "enter mew name for student "; 
+	cin >> newName;
+	student.setName(newName);
+	student.introduce();
 
 
 }
