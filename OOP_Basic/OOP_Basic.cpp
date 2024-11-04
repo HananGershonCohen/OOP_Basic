@@ -28,18 +28,20 @@ public:
 	
 };
 
+
+
 int main()
 {
-	Men student("hanan", 21, 180);
-	student.introduce();
-	student.birthday();
-	student.introduce();
-	cout << student.getName() << endl;
+	Men person("hanan", 21, 180);
+	person.introduce();
+	person.birthday();
+	person.introduce();
+	cout << person.getName() << endl;
 	string newName;
 	cout << "enter mew name for student "; 
 	cin >> newName;
-	student.setName(newName);
-	student.introduce();
+	person.setName(newName);
+	person.introduce();
 
 
 }
