@@ -3,6 +3,7 @@
 
 using namespace std;
 
+
 class Men {
 private:
 	string name;
@@ -25,9 +26,8 @@ public:
 	void setName(string newName) {
 		name = newName;
 	}
-	
-};
 
+};
 
 
 int main()
@@ -42,6 +42,5 @@ int main()
 	cin >> newName;
 	person.setName(newName);
 	person.introduce();
-
 
 }
